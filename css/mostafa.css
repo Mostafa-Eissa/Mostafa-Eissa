@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    
+    font-family: 'El Messiri', sans-serif;
+    background: linear-gradient(-45deg, #000428, #004e92, #000428, #004e92);
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite;
+    
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #e2a355;
+    --transparent-color: #7f7770;
+    --section-padding: 50px
+}
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width :992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start all */
+.main .container {
+    
+        
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.main .container .about .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.main .container .about .image img {
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+
+.main .container .about:hover .image img{
+    transform: rotate(360deg);
+}
+
+.main .container .about .text {
+    text-align: center;
+}
+
+.main .container .about .text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main .container .about .text p {
+    font-size: 20px;
+    width: 450px;
+    margin: 0 auto 40px;
+    color: white;
+    line-height: 1.6;
+}
+
+.main .container .about .text h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .container .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.main .container .cards .card{
+    background-color: white;
+    
+    
+}
+
+.main .container .cards .card img {
+    width: 100%;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.main .container .cards .card:hover img{
+    transform: scale(1.05);
+}
+
+
+.main .container .cards .card h3{
+    text-align: center;
+    font-size: 25px;
+    color: #004e92;
+    margin-bottom: 20px;
+}
+
+
+
+.main .container .cards .card a{
+    padding: 10px 40px;
+    width: fit-content;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #004e92;
+    margin: -10px auto 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #004e92;
+}
+
+.main .container .cards .card a:hover{
+    background-color: transparent;
+    border: 1px solid #004e92;
+    color: #004e92;
+}
+
+@media (max-width:767px){
+    .main .container .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+            gap: 30px;
+        }
+    .main .container .about .text p{
+        width: 250px !important;
+    }
+    .main .container .about .text h3{
+        width: 250px !important;
+        margin: 0 auto 20px;
+    }
+}
+
+.main .container .contact{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main .container .contact h4{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #004e92;
+}
+.main .container .contact .social{
+   
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.main .container .contact .social li a{
+    margin-left: 10px;
+    position: relative;
+    left: -10px;
+}
+
+.main .container .contact .social li a i{
+    font-size: 35px;
+    color: #004e92;
+    margin-left: 10px;
+}
+
+/* end all */
